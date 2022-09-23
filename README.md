@@ -47,6 +47,7 @@ http.host contains "monta.if.its.ac.id"
 ```
 2. Right click on packet and follow HTTP stream. As you can see , Server : `nginx/1.10.3`
 
+<img src="/pic of ans/Image 1.jpg">
 
 ## Number 2
 ### Question :
@@ -57,7 +58,12 @@ Ishaq was confused looking for TA topics for this semester, then he came to the 
 http contains "detailTopik"
 ```
 2. Right click on packet and follow HTTP stream. Get referer link `http://monta.if.its.ac.id/index.php/topik/detailTopik/194`
-3. Open the [**LINK**](http://monta.if.its.ac.id/index.php/topik/detailTopik/194) and the page will show the TA title : `Evaluasi unjuk kerja User Space Filesystem (FUSE)`
+
+<img src="/pic of ans/Image 2(1).jpg">
+
+3. Open the [LINK](http://monta.if.its.ac.id/index.php/topik/detailTopik/194) and the page will show the TA title : `Evaluasi unjuk kerja User Space Filesystem (FUSE)`
+
+<img src="/pic of ans/Image 2(2).jpg">
 
 ## Number 3
 ### Question :
@@ -68,6 +74,8 @@ Filter so that wireshark only shows packets going to port 80!
 tcp.dstport == 80
 ```
 
+<img src="/pic of ans/Image 3.jpg">
+
 ## Number 4
 ### Question :
 Filter so that wireshark only picks up packets coming from port 21!
@@ -76,6 +84,8 @@ Filter so that wireshark only picks up packets coming from port 21!
 ```
 tcp.srcport == 21
 ```
+
+<img src="/pic of ans/Image 4.jpg">
 
 ## Number 5
 ### Question :
@@ -86,25 +96,37 @@ Filter so that wireshark only picks up packets coming from port 443!
 tcp.srcport == 443
 ```
 
+<img src="/pic of ans/Image 5.jpg">
+
 ## Number 6
 ### Question :
 Filter so that wireshark only shows packets going to lipi.go.id !
 ### Answer :
 1. `ping lipi.go.id` in cmd to find the ip
+
+<img src="/pic of ans/Image 6(1).jpg">
+
 2. Display Filter 
 ```
  ip.dst == 203.160.128.158
 ```
+
+<img src="/pic of ans/Image 6(2).jpg">
 
 ## Number 7
 ### Question :
 Filter so that wireshark only picks up packets coming from your ip!
 ### Answer :
 1. `ipconfig` to find my ip in cmd
+
+<img src="/pic of ans/Image 7(1).jpg">
+
 2. Capture Filter 
 ```
 src host 192.168.100.66
 ```
+
+<img src="/pic of ans/Image 7(2).jpg">
 
 ## Number 8
 ### Question :
@@ -114,7 +136,12 @@ Browse the flow of packets in the given .pcap file, look for useful information 
 ```
 tcp.flags.ack == 1 && tcp.flags.push == 1
 ```
+
+<img src="/pic of ans/Image 8(1).jpg">
+
 2. Found their conversation and a hint that they will make file exchanges through port 9002 
+
+<img src="/pic of ans/Image 8(2).jpg">
 
 ## Number 9
 ### Question :
@@ -124,6 +151,9 @@ There are reports of file exchanges made by the two students in the conversation
 ```
 tcp.flags.ack == 1 && tcp.flags.push == 1 && tcp.port == 9002
 ```
+
+<img src="/pic of ans/Image 9.jpg">
+
 2. Found the salt file and save it as I08.des3
 3. Execute OpenSSL command in cmd 
 ```
@@ -136,5 +166,8 @@ openssl des3 -d -salt -in I08.des3 -out flag.txt
 Find the secret password (flag) of the above-mentioned underground organization!
 ### Answer :
 1. Open file flag.txt 
+
+<img src="/pic of ans/Image 10.jpg">
+
 2. The password is `JaRkOm2022{8uK4N_CtF_k0k_h3h3h3}`
 
