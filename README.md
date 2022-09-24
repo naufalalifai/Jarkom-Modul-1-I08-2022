@@ -169,7 +169,7 @@ Find the secret password (flag) of the above-mentioned underground organization!
 ### Answer :
 1. Open file flag.txt 
 
-<img src="/pic of ans/Image 10.jpg">
+<img src="/pic of ans/Image 10.png" width="640" height="360">
 
 2. The password is `JaRkOm2022{8uK4N_CtF_k0k_h3h3h3}`
 
