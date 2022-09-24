@@ -104,14 +104,14 @@ Filter so that wireshark only shows packets going to lipi.go.id !
 ### Answer :
 1. `ping lipi.go.id` in cmd to find the ip
 
-<img src="/pic of ans/Image 6(1).png width="640" height="360"">
+<img src="/pic of ans/Image 6(1).png" width="640" height="360">
 
 2. Display Filter 
 ```
  ip.dst == 203.160.128.158
 ```
 
-<img src="/pic of ans/Image 6(2).png width="640" height="360"">
+<img src="/pic of ans/Image 6(2).png" width="640" height="360">
 
 ## Number 7
 ### Question :
@@ -119,14 +119,14 @@ Filter so that wireshark only picks up packets coming from your ip!
 ### Answer :
 1. `ipconfig` to find my ip in cmd
 
-<img src="/pic of ans/Image 7(1).png width="640" height="360"">
+<img src="/pic of ans/Image 7(1).png" width="640" height="360">
 
 2. Capture Filter 
 ```
 src host 192.168.100.66
 ```
 
-<img src="/pic of ans/Image 7(2).png width="640" height="360"">
+<img src="/pic of ans/Image 7(2).png" width="640" height="360">
 
 ## Number 8
 ### Question :
@@ -141,7 +141,7 @@ tcp.flags.ack == 1 && tcp.flags.push == 1
 
 2. Found their conversation and a hint that they will make file exchanges through port 9002 
 
-<img src="/pic of ans/Image 8(2).png width="640" height="360"">
+<img src="/pic of ans/Image 8(2).png" width="640" height="360">
 
 ## Number 9
 ### Question :
@@ -152,7 +152,7 @@ There are reports of file exchanges made by the two students in the conversation
 tcp.flags.ack == 1 && tcp.flags.push == 1 && tcp.port == 9002
 ```
 
-<img src="/pic of ans/Image 9.png width="640" height="360"">
+<img src="/pic of ans/Image 9.png" width="640" height="360">
 
 2. Found the salt file and save it as I08.des3
 3. Execute OpenSSL command in cmd 
@@ -161,7 +161,7 @@ openssl des3 -d -salt -in I08.des3 -out flag.txt
 ```
 4. The hint for the decryption password was found on their conversation and the password is `nakano`
 
-<img src="/pic of ans/Image 9(2).png width="640" height="360"">
+<img src="/pic of ans/Image 9(2).png" width="640" height="360">
 
 ## Number 10
 ### Question :
